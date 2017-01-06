@@ -1,0 +1,103 @@
+/* navigation bar*/
+
+/* didnt have container class on html */
+
+.container {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+nav {
+	padding-top: 10px;
+	padding-right: 10px;
+	position: fixed;
+	top: 0px
+	left: 0px;
+	margin: 0px;
+	width:100%;
+	height: 60px; /*got height wrong had 190px instead of 60px*/
+	background-color: grey;
+}
+
+.logo{
+	/* had this too padding-left: 10px;*/
+	height: 50px; /* didnt have height element */
+	margin-top: 5px;
+	margin-bottom: 5px; /*didnt have top or bottom margins*/
+	vertical-align: middle; /* didnt have verticle align*/
+	border:1px solid black;
+
+	/*elliptcal shape with radius*/
+
+	border-radius:50%;
+}
+
+/* Had the following for lists that was incorrect
+.list{
+	padding-top: 10px;
+	padding-right: 10px;
+	position: fixed;
+	text-align: left;
+	left:200px;
+}
+*/
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li::after {
+  content: "|";
+  margin-left: 5px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+/* Space dog and Cat*/
+
+/*background info*/
+body {
+  background: url(../images/outerspace_landscape.jpeg) no-repeat;
+  background-size: cover;
+}
+
+/*didnt have main*/
+main {
+  padding-top: 90px;
+  min-width: 1000px;
+}
+
+.box {
+  margin-top: 150px; /*didnt get the margin*/
+  width: 600px;
+  height: 300px;
+  position: relative;
+  border: 10px dotted green;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.spacecat, .spacedog {
+  position: absolute;
+  width: 200px;
+}
+
+
+/*didnt get positioning of dog quite correct*/
+
+.spacecat {
+  top: -90px;
+  left: -90px;
+}
+
+.spacedog {
+  bottom: -120px;
+  right: -60px;
+}
